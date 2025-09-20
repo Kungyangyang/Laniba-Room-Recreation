@@ -64,6 +64,15 @@ blanket.position.x = -5;
 blanket.position.y = -3;
 blanket.position.z = 2;
 
+//Desk
+const deskGeometry = new THREE.BoxGeometry( 12, 5, 5 );
+const deskMaterial = new THREE.MeshBasicMaterial( { color: 0xdbdbdb } );
+const desk = new THREE.Mesh( deskGeometry, deskMaterial ); 
+scene.add( desk );
+desk.position.x = 9;
+desk.position.y = -2;
+desk.position.z = 12;
+
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
 const capsuleMaterial = new THREE.MeshBasicMaterial( {color: 0xe8fdff} ); 
@@ -103,7 +112,7 @@ mesh.position.y = 150;
 
 
 scene.background = new THREE.Color(0x007cad);
-camera.position.set(25, 5, 0);
+camera.position.set(20, 15, -20);
 camera.lookAt(0, 0, 0);
 
 const ambientLight = new THREE.AmbientLight(0x404040);
