@@ -53,6 +53,16 @@ scene.add( pillow );
 pillow.position.x = -5;
 pillow.position.y = -1;
 pillow.position.z = 12;
+pillow.rotation.x = -Math.PI / 8;
+
+//Blanket
+const blanketGeometry = new THREE.BoxGeometry( 11, 4, 19 );
+const blanketMaterial = new THREE.MeshBasicMaterial( { color: 0x720a94 } );
+const blanket = new THREE.Mesh( blanketGeometry, blanketMaterial );
+scene.add( blanket );
+blanket.position.x = -5;
+blanket.position.y = -3;
+blanket.position.z = 2;
 
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
