@@ -26,17 +26,16 @@ lWall.position.y = 5;
 lWall.position.z = 15;
 lWall.rotation.x = Math.PI / 2;
 
-/*
-const backWallGeometry = new THREE.BoxGeometry( 20, 1, 20 );
+
+const backWallGeometry = new THREE.BoxGeometry( 20, 1, 30 );
 const backWallMaterial = new THREE.MeshBasicMaterial( { color: 0xe3be07 } );
 const bWall = new THREE.Mesh( backWallGeometry, backWallMaterial );
 scene.add( bWall );
-bWall.position.x = -10;
-bWall.position.y = 0;
-bWall.position.z = 10;
-bWall.rotation.x = -Math.PI / 2;
+bWall.position.x = -15;
+bWall.position.y = 5;
+bWall.position.z = 0;
+bWall.rotation.z = -Math.PI / 2;
 
-*/
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
 const capsuleMaterial = new THREE.MeshBasicMaterial( {color: 0xe8fdff} ); 
