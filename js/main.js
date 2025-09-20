@@ -108,13 +108,33 @@ chair.position.y = -4;
 chair.position.z = 5;
 
 //Drawer
-const drawerGeometry = new THREE.BoxGeometry( 5, 10, 5 );
+const drawerGeometry = new THREE.BoxGeometry( 6, 10, 5 );
 const drawerMaterial = new THREE.MeshBasicMaterial( { color: 0x93a396 } );
 const drawer = new THREE.Mesh( drawerGeometry, drawerMaterial );
 scene.add( drawer );
 drawer.position.x = 0;
-drawer.position.y = -1;
+drawer.position.y = 0;
 drawer.position.z = 12;
+
+//Drawer Shelves
+const shelfGeometry = new THREE.BoxGeometry( 5, 2, 5 );
+const shelfMaterial = new THREE.MeshBasicMaterial( { color: 0xffd58c } );
+const shelf1 = new THREE.Mesh( shelfGeometry, shelfMaterial );
+scene.add( shelf1 );
+shelf1.position.x = 0;
+shelf1.position.y = 3;
+shelf1.position.z = 11;
+const shelf2 = new THREE.Mesh( shelfGeometry, shelfMaterial );
+scene.add( shelf2 );
+shelf2.position.x = 0;
+shelf2.position.y = 0;
+shelf2.position.z = 11;
+const shelf3 = new THREE.Mesh( shelfGeometry, shelfMaterial );
+scene.add( shelf3 );
+shelf3.position.x = 0;
+shelf3.position.y = -3;
+shelf3.position.z = 11;
+
 
 //Pang template nalang
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
