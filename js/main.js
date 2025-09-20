@@ -100,13 +100,13 @@ leg4.position.z = 14;
 
 
 //Chair
-const chairGeometry = new THREE.BoxGeometry( 5, 5, 5 );
-const chairMaterial = new THREE.MeshBasicMaterial( { color: 0x171717 } ); 
+const chairGeometry = new THREE.CylinderGeometry( 2, 2, 1, 32 );
+const chairMaterial = new THREE.MeshBasicMaterial( { color: 0x171717 } );
 const chair = new THREE.Mesh( chairGeometry, chairMaterial );
 scene.add( chair );
 chair.position.x = 9;
-chair.position.y = -4;
-chair.position.z = 5;
+chair.position.y = -2;
+chair.position.z = 4;
 
 //Drawer
 const drawerGeometry = new THREE.BoxGeometry( 6, 10, 5 );
@@ -144,7 +144,6 @@ scene.add( laptop );
 laptop.position.x = 9;
 laptop.position.y = 1;
 laptop.position.z = 11;
-//Laptop Screen
 const screenGeometry = new THREE.BoxGeometry( 4, 3, 0.2 );
 const screenMaterial = new THREE.MeshBasicMaterial( { color: 0x00000 } );
 const screen = new THREE.Mesh( screenGeometry, screenMaterial );
