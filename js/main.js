@@ -65,13 +65,38 @@ blanket.position.y = -3;
 blanket.position.z = 1;
 
 //Desk
-const deskGeometry = new THREE.BoxGeometry( 12, 5, 5 );
+const deskGeometry = new THREE.BoxGeometry( 12, 1, 6 );
 const deskMaterial = new THREE.MeshBasicMaterial( { color: 0xdbdbdb } );
 const desk = new THREE.Mesh( deskGeometry, deskMaterial ); 
 scene.add( desk );
 desk.position.x = 9;
-desk.position.y = -2;
+desk.position.y = 0;
 desk.position.z = 12;
+
+//Desk Legs
+const legGeometry = new THREE.BoxGeometry( 1, 5, 1 );
+const legMaterial = new THREE.MeshBasicMaterial( { color: 0xe09a1f } );
+const leg1 = new THREE.Mesh( legGeometry, legMaterial );
+scene.add( leg1 );
+leg1.position.x = 4;
+leg1.position.y = -2.5;
+leg1.position.z = 10;
+const leg2 = new THREE.Mesh( legGeometry, legMaterial );
+scene.add( leg2 );
+leg2.position.x = 14;
+leg2.position.y = -2.5;
+leg2.position.z = 10;
+const leg3 = new THREE.Mesh( legGeometry, legMaterial );
+scene.add( leg3 );
+leg3.position.x = 4;
+leg3.position.y = -2.5;
+leg3.position.z = 14;
+const leg4 = new THREE.Mesh( legGeometry, legMaterial );
+scene.add( leg4 );
+leg4.position.x = 14;
+leg4.position.y = -2.5;
+leg4.position.z = 14;
+
 
 //Chair
 const chairGeometry = new THREE.BoxGeometry( 5, 5, 5 );
