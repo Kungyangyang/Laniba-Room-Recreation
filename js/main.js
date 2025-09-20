@@ -41,7 +41,7 @@ const bedGeometry = new THREE.BoxGeometry( 10, 3, 20 );
 const bedMaterial = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 const bed = new THREE.Mesh( bedGeometry, bedMaterial );
 scene.add( bed );
-bed.position.x = -5;
+bed.position.x = -8;
 bed.position.y = -3;
 bed.position.z = 5;
 
@@ -50,7 +50,7 @@ const pillowGeometry = new THREE.BoxGeometry( 8, 1, 5 );
 const pillowMaterial = new THREE.MeshBasicMaterial( { color: 0x404040 } );
 const pillow = new THREE.Mesh( pillowGeometry, pillowMaterial );
 scene.add( pillow );
-pillow.position.x = -5;
+pillow.position.x = -8;
 pillow.position.y = -1;
 pillow.position.z = 12;
 pillow.rotation.x = -Math.PI / 8;
@@ -60,7 +60,7 @@ const blanketGeometry = new THREE.BoxGeometry( 11, 4, 19 );
 const blanketMaterial = new THREE.MeshBasicMaterial( { color: 0x720a94 } );
 const blanket = new THREE.Mesh( blanketGeometry, blanketMaterial );
 scene.add( blanket );
-blanket.position.x = -5;
+blanket.position.x = -8;
 blanket.position.y = -3;
 blanket.position.z = 2;
 
