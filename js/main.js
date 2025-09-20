@@ -8,33 +8,35 @@ document.body.appendChild( renderer.domElement );
 //Recreation of My Own Boarding House Room
 
 //Floor
-const floorGeometry = new THREE.BoxGeometry( 20, 1, 20 );
+const floorGeometry = new THREE.BoxGeometry( 30, 1, 30 );
 const floorMaterial = new THREE.MeshBasicMaterial( { color: 0x4a3905 } );
 const floor = new THREE.Mesh( floorGeometry, floorMaterial );
 scene.add( floor );
 floor.position.x = 0;
-floor.position.y = -2;
+floor.position.y = -5;
 floor.position.z = 0;
 
 // 2 Walls
-const leftWallGeometry = new THREE.BoxGeometry( 20, 1, 20 );
-const leftWallMaterial = new THREE.MeshBasicMaterial( { color: 0x4a3905 } );
+const leftWallGeometry = new THREE.BoxGeometry( 30, 1, 20 );
+const leftWallMaterial = new THREE.MeshBasicMaterial( { color: 0xe3be07 } );
 const lWall = new THREE.Mesh( leftWallGeometry, leftWallMaterial );
 scene.add( lWall );
 lWall.position.x = 0;
-lWall.position.y = 0;
-lWall.position.z = 0;
+lWall.position.y = 5;
+lWall.position.z = 15;
+lWall.rotation.x = Math.PI / 2;
 
+/*
+const backWallGeometry = new THREE.BoxGeometry( 20, 1, 20 );
+const backWallMaterial = new THREE.MeshBasicMaterial( { color: 0xe3be07 } );
+const bWall = new THREE.Mesh( backWallGeometry, backWallMaterial );
+scene.add( bWall );
+bWall.position.x = -10;
+bWall.position.y = 0;
+bWall.position.z = 10;
+bWall.rotation.x = -Math.PI / 2;
 
-const rightWallGeometry = new THREE.BoxGeometry( 20, 1, 20 );
-const rightWallMaterial = new THREE.MeshBasicMaterial( { color: 0x4a3905 } );
-const rWall = new THREE.Mesh( rightWallGeometry, rightWallMaterial );
-scene.add( rWall );
-rWall.position.x = 0;
-rWall.position.y = 0;
-rWall.position.z = 0;
-
-
+*/
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
 const capsuleMaterial = new THREE.MeshBasicMaterial( {color: 0xe8fdff} ); 
@@ -77,7 +79,12 @@ scene.background = new THREE.Color(0x007cad);
 camera.position.set(25, 5, 0);
 camera.lookAt(0, 0, 0);
 
+const ambientLight = new THREE.AmbientLight(0x404040);
+scene.add(ambientLight);
 
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+directionalLight.position.set(10, 20, 10);
+scene.add(directionalLight);
 
 //Renderer
 function animate(time) {
