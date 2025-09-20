@@ -152,6 +152,38 @@ screen.position.x = 9;
 screen.position.y = 2.5;
 screen.position.z = 13;
 
+//Table
+const tableGeometry = new THREE.BoxGeometry( 8, 1, 8 );
+const tableMaterial = new THREE.MeshBasicMaterial( { color: 0xdbdbdb } );
+const table = new THREE.Mesh( tableGeometry, tableMaterial );
+scene.add( table );
+table.position.x = -11;
+table.position.y = 0;
+table.position.z = -11;
+
+//Table Legs
+const tableLegs = new THREE.BoxGeometry( 1, 5, 1 );
+const tableLegMaterial = new THREE.MeshBasicMaterial( { color: 0xbdbdbd } );
+const tableLeg1 = new THREE.Mesh( tableLegs, tableLegMaterial );
+scene.add( tableLeg1 );
+tableLeg1.position.x = -13;
+tableLeg1.position.y = -2.5;
+tableLeg1.position.z = -14;
+const tableLeg2 = new THREE.Mesh( tableLegs, tableLegMaterial );
+scene.add( tableLeg2 );
+tableLeg2.position.x = -8;
+tableLeg2.position.y = -2.5;
+tableLeg2.position.z = -14;
+const tableLeg3 = new THREE.Mesh( tableLegs, tableLegMaterial );
+scene.add( tableLeg3 );
+tableLeg3.position.x = -13;
+tableLeg3.position.y = -2.5;
+tableLeg3.position.z = -8;
+const tableLeg4 = new THREE.Mesh( tableLegs, tableLegMaterial );
+scene.add( tableLeg4 );
+tableLeg4.position.x = -8;
+tableLeg4.position.y = -2.5;
+tableLeg4.position.z = -8;
 
 
 //Pang template nalang
