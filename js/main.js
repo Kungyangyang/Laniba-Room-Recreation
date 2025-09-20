@@ -141,16 +141,25 @@ const laptopGeometry = new THREE.BoxGeometry( 4, 0.5, 3 );
 const laptopMaterial = new THREE.MeshBasicMaterial( { color: 0x000000 } );
 const laptop = new THREE.Mesh( laptopGeometry, laptopMaterial );
 scene.add( laptop );
-laptop.position.x = 9;
+laptop.position.x = 10;
 laptop.position.y = 1;
 laptop.position.z = 11;
 const screenGeometry = new THREE.BoxGeometry( 4, 3, 0.2 );
 const screenMaterial = new THREE.MeshBasicMaterial( { color: 0x00000 } );
 const screen = new THREE.Mesh( screenGeometry, screenMaterial );
 scene.add( screen );
-screen.position.x = 9;
+screen.position.x = 10;
 screen.position.y = 2.5;
 screen.position.z = 13;
+
+//Mouse
+const mouseGeometry = new THREE.BoxGeometry( 1, 0.5, 2 );
+const mouseMaterial = new THREE.MeshBasicMaterial( { color: 0x000000 } );
+const mouse = new THREE.Mesh( mouseGeometry, mouseMaterial );
+scene.add( mouse );
+mouse.position.x = 6;
+mouse.position.y = 0.5;
+mouse.position.z = 11;
 
 //Table
 const tableGeometry = new THREE.BoxGeometry( 8, 1, 8 );
