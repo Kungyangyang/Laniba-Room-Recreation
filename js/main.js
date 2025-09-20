@@ -56,13 +56,13 @@ pillow.position.z = 12;
 pillow.rotation.x = -Math.PI / 8;
 
 //Blanket
-const blanketGeometry = new THREE.BoxGeometry( 11, 4, 19 );
+const blanketGeometry = new THREE.BoxGeometry( 11, 4, 15 );
 const blanketMaterial = new THREE.MeshBasicMaterial( { color: 0x720a94 } );
 const blanket = new THREE.Mesh( blanketGeometry, blanketMaterial );
 scene.add( blanket );
 blanket.position.x = -8;
 blanket.position.y = -3;
-blanket.position.z = 2;
+blanket.position.z = 1;
 
 //Desk
 const deskGeometry = new THREE.BoxGeometry( 12, 5, 5 );
@@ -72,6 +72,24 @@ scene.add( desk );
 desk.position.x = 9;
 desk.position.y = -2;
 desk.position.z = 12;
+
+//Chair
+const chairGeometry = new THREE.BoxGeometry( 5, 5, 5 );
+const chairMaterial = new THREE.MeshBasicMaterial( { color: 0x171717 } ); 
+const chair = new THREE.Mesh( chairGeometry, chairMaterial );
+scene.add( chair );
+chair.position.x = 9;
+chair.position.y = -4;
+chair.position.z = 5;
+
+//Drawer
+const drawerGeometry = new THREE.BoxGeometry( 5, 10, 5 );
+const drawerMaterial = new THREE.MeshBasicMaterial( { color: 0x93a396 } );
+const drawer = new THREE.Mesh( drawerGeometry, drawerMaterial );
+scene.add( drawer );
+drawer.position.x = 0;
+drawer.position.y = -1;
+drawer.position.z = 12;
 
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
