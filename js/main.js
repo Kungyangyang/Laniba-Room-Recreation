@@ -116,7 +116,7 @@ drawer.position.x = 0;
 drawer.position.y = -1;
 drawer.position.z = 12;
 
-
+//Pang template nalang
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
 const capsuleMaterial = new THREE.MeshBasicMaterial( {color: 0xe8fdff} ); 
 const capsule = new THREE.Mesh( capsuleGeometry, capsuleMaterial ); scene.add( capsule );
@@ -168,11 +168,5 @@ scene.add(directionalLight);
 //Renderer
 function animate(time) {
   renderer.render( scene, camera );
-
-  sphere.rotation.x += 0.01;  
-  sphere.rotation.y += 0.01;
-  torus.rotation.x += 0.01;  
-  torus.rotation.y += 0.01;
-  mesh.rotation.z += 0.01;
 }
 renderer.setAnimationLoop( animate );
