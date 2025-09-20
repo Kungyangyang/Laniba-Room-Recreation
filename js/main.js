@@ -36,6 +36,24 @@ bWall.position.y = 5;
 bWall.position.z = 0;
 bWall.rotation.z = -Math.PI / 2;
 
+//Bed
+const bedGeometry = new THREE.BoxGeometry( 10, 3, 20 );
+const bedMaterial = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+const bed = new THREE.Mesh( bedGeometry, bedMaterial );
+scene.add( bed );
+bed.position.x = -5;
+bed.position.y = -3;
+bed.position.z = 5;
+
+//Pillow
+const pillowGeometry = new THREE.BoxGeometry( 8, 1, 5 );
+const pillowMaterial = new THREE.MeshBasicMaterial( { color: 0x404040 } );
+const pillow = new THREE.Mesh( pillowGeometry, pillowMaterial );
+scene.add( pillow );
+pillow.position.x = -5;
+pillow.position.y = -1;
+pillow.position.z = 12;
+
 
 /*const capsuleGeometry = new THREE.CapsuleGeometry( 0.5, 1, 1, 8 );
 const capsuleMaterial = new THREE.MeshBasicMaterial( {color: 0xe8fdff} ); 
