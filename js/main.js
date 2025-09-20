@@ -16,6 +16,7 @@ floor.position.x = 0;
 floor.position.y = -5;
 floor.position.z = 0;
 
+
 // 2 Walls
 const leftWallGeometry = new THREE.BoxGeometry( 30, 1, 20 );
 const leftWallMaterial = new THREE.MeshBasicMaterial( { color: 0xe3be07 } );
@@ -134,6 +135,24 @@ scene.add( shelf3 );
 shelf3.position.x = 0;
 shelf3.position.y = -3;
 shelf3.position.z = 11;
+
+//Laptop
+const laptopGeometry = new THREE.BoxGeometry( 4, 0.5, 3 );
+const laptopMaterial = new THREE.MeshBasicMaterial( { color: 0x000000 } );
+const laptop = new THREE.Mesh( laptopGeometry, laptopMaterial );
+scene.add( laptop );
+laptop.position.x = 9;
+laptop.position.y = 1;
+laptop.position.z = 11;
+//Laptop Screen
+const screenGeometry = new THREE.BoxGeometry( 4, 3, 0.2 );
+const screenMaterial = new THREE.MeshBasicMaterial( { color: 0x00000 } );
+const screen = new THREE.Mesh( screenGeometry, screenMaterial );
+scene.add( screen );
+screen.position.x = 9;
+screen.position.y = 2.5;
+screen.position.z = 13;
+
 
 
 //Pang template nalang
